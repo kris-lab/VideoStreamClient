@@ -24,3 +24,16 @@ Methods:
 - startPublish(): Start publishing video
 - stopPublish(): Stop publishing video
 - setMicrophoneLevel(level [float]): Set microphone volume
+
+Build
+-----
+It requires to install [Flex SDK 4.6+](http://www.adobe.com/devnet/flex/flex-sdk-download.html) which has support to `H.264`. 
+You would have to switch to `publisher` or `subscriber` and run command 
+```
+ant
+```
+If build fails due to unknown `Flex SDK`, please edit file `build.xml` and add/modify with line
+```
+<property name="flex.sdk.home" location="/path-to-your/flex_sdk_4.6"/>
+```
+In most cases it should work if `Flex SDK` is correctly installed in your specific OS.
