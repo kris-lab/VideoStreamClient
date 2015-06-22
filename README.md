@@ -28,7 +28,7 @@ Methods:
 Build
 -----
 It requires to install [Flex SDK 4.6+](http://www.adobe.com/devnet/flex/flex-sdk-download.html) which has support for `H.264`. 
-Switch to `publisher` or `subscriber` and run command `ant` to build project. 
+Build the `publisher` or `subscriber` by running the [ant](http://ant.apache.org/) command accordingly inside publisher/subscriber directory. 
 If build fails due to unknown `Flex SDK`, please edit file `build.xml` and add/modify with line
 ```
 <property name="flex.sdk.home" location="/path-to-your/flex_sdk_4.6"/>
